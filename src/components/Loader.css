@@ -1,0 +1,125 @@
+/* ===== Loader Screen ===== */
+.loader-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #A6E3E9, #C2EEF4, #A6E3E9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+  z-index: 2;
+}
+
+.loader-logo {
+  width: 120px;
+  height: 120px;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.loader-logo span {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #A6E3E9, #8AD4DD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.loader-name {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--white);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.loader-bar {
+  width: 300px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.loader-progress {
+  height: 100%;
+  background: var(--white);
+  border-radius: var(--radius-full);
+  transform-origin: left;
+}
+
+/* Loader Shapes */
+.loader-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.loader-shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.loader-shape.shape-1 {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.2);
+  top: 10%;
+  right: 10%;
+}
+
+.loader-shape.shape-2 {
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.15);
+  bottom: 15%;
+  left: 15%;
+}
+
+.loader-shape.shape-3 {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.25);
+  top: 50%;
+  left: 5%;
+}
+
+@media (max-width: 768px) {
+  .loader-name {
+    font-size: 1.75rem;
+  }
+
+  .loader-bar {
+    width: 200px;
+  }
+
+  .loader-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .loader-logo span {
+    font-size: 2.5rem;
+  }
+}

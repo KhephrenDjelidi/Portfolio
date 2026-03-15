@@ -1,0 +1,197 @@
+/* ===== Contact Section ===== */
+.contact {
+  background: var(--gray-50);
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Contact Info */
+.contact-info {
+  position: relative;
+  padding: var(--space-lg);
+  background: linear-gradient(135deg, #60A5FA, #A7F3D0);
+  border-radius: var(--radius-2xl);
+  color: var(--white);
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.25);
+}
+
+.contact-info h3 {
+  font-size: 1.25rem;
+  color: var(--white);
+  margin-bottom: var(--space-sm);
+}
+
+.contact-info > p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--space-lg);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.contact-label {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-bottom: var(--space-xs);
+}
+
+.contact-item a,
+.contact-item span:not(.contact-label) {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* Decorations */
+.contact-decoration {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+}
+
+.decoration-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.decoration-circle:nth-child(1) {
+  width: 150px;
+  height: 150px;
+  bottom: 0;
+  right: 0;
+}
+
+.decoration-circle:nth-child(2) {
+  width: 200px;
+  height: 200px;
+  bottom: -25px;
+  right: -25px;
+}
+
+.decoration-circle:nth-child(3) {
+  width: 250px;
+  height: 250px;
+  bottom: -50px;
+  right: -50px;
+}
+
+/* Contact Form */
+.contact-form {
+  background: var(--white);
+  padding: var(--space-lg);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: var(--space-md);
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--gray-800);
+  transition: all 0.4s ease;
+  resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  transform: scale(1.01);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--gray-400);
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: var(--space-md);
+}
+
+.form-status {
+  text-align: center;
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+}
+
+.form-status.success {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--accent-green);
+}
+
+.form-status.error {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .contact-info {
+    padding: var(--space-xl);
+  }
+
+  .contact-form {
+    padding: var(--space-xl);
+  }
+}

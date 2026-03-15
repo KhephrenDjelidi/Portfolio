@@ -1,0 +1,33 @@
+.but-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-xl);
+  gap: var(--space-md);
+}
+
+.but-selector button {
+  padding: var(--space-sm) var(--space-lg);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  background: var(--gray-100);
+  color: var(--gray-700);
+  border: 2px solid transparent;
+}
+
+.but-selector button:hover {
+  background: var(--gray-200);
+  color: var(--gray-900);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.but-selector button.active {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary-dark);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+  transform: scale(1.05);
+}
