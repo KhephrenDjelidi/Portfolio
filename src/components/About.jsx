@@ -30,7 +30,7 @@ const About = ({ profile }) => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="about-image-wrapper">
-              <img src="/assets/profil.jpg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Khephren Djelidi" className="about-image-placeholder" />
+              <img src="/portfolio/assets/profil.jpg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} alt="Khephren Djelidi" className="about-image-placeholder" />
               <div className="about-image-decoration"></div>
             </div>
           </motion.div>
@@ -49,7 +49,7 @@ const About = ({ profile }) => {
               Passionné par le développement web et les nouvelles technologies, je suis constamment à la recherche de nouveaux défis et d'opportunités d'apprentissage. Mon objectif est de devenir un développeur polyvalent capable de mener des projets de A à Z.
             </p>
 
-            <a href="/assets/cv.pdf" target="_blank" download="CV_Khephren_Djelidi.pdf" className="btn btn-primary">
+            <a href="/portfolio/assets/cv.pdf" target="_blank" download="CV_Khephren_Djelidi.pdf" className="btn btn-primary">
               <FaFileDownload /> Télécharger mon CV
             </a>
           </motion.div>
