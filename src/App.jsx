@@ -11,6 +11,8 @@ import Footer from "./components/Footer";
 import Loader from "./components/Loader";
 import "./styles/App.css";
 
+const ASSET_BASE = `${import.meta.env.BASE_URL}assets/`;
+
 // Donnees du portfolio
 const portfolioData = {
   profile: {
@@ -101,7 +103,7 @@ const portfolioData = {
       subtitle: "Across the Galaxy",
       description:
         "Développement d'une application de recherche d'itinéraires spatiaux inspirée de Star Wars. Implémentation de l'algorithme A* pour optimiser les trajets entre les planètes. Interface interactive et gestion complète des données de voyage.",
-      image: "assets/TRAVIA.png",
+      image: `${ASSET_BASE}travia.png`,
       technologies: ["Java", "C", "PHP", "MySQL"],
       github: "https://github.com/KhephrenDjelidi",
       team: "Équipe de 3 - SAE BUT2",
@@ -113,7 +115,7 @@ const portfolioData = {
       subtitle: "Course contre la montre",
       description:
         "Jeu multijoueur immersif où les joueurs naviguent entre des articles Wikipedia pour accumuler des points rapidement. Système de classement en temps réel et modes de jeu variés pour une expérience compétitive.",
-      image: "assets/WIKISPEED.png",
+      image: `${ASSET_BASE}wikispeed.png`,
       technologies: ["React", "Node.js", "MongoDB"],
       github: "https://github.com/KhephrenDjelidi",
       team: "Équipe de 4 - SAE BUT2",
@@ -125,7 +127,7 @@ const portfolioData = {
       subtitle: "Gestion bancaire",
       description:
         "Application complète de gestion de trésorerie destinée aux entreprises. Génération de graphiques analytiques et export de rapports en PDF. Suivi des transactions et gestion budgétaire simplifiée.",
-      image: "assets/BANKAI.png",
+      image: `${ASSET_BASE}bankai.png`,
       technologies: ["PHP", "MySQL", "Scrum"],
       github: "https://github.com/KhephrenDjelidi",
       team: "Équipe de 5 - Méthode Agile",
@@ -137,7 +139,7 @@ const portfolioData = {
       subtitle: "Réservation de billets",
       description:
         "Système intégré de réservation de billets de train avec recherche avancée. Gestion complète des trajets, des horaires et des disponibilités. Interface utilisateur conviviale pour une expérience de réservation fluide.",
-      image: "assets/HessNCF.png",
+      image: `${ASSET_BASE}hessncf.png`,
       technologies: ["Node.js", "MongoDB", "HTML/CSS"],
       github: "https://github.com/KhephrenDjelidi",
       team: "Équipe de 5",
@@ -149,7 +151,7 @@ const portfolioData = {
       subtitle: "Jeu rétro revisité",
       description:
         "Recréation fidèle du célèbre jeu arcade QIX des années 80, développé en Python. Moteur de jeu complet avec physique, collision et système de scoring authentique pour une expérience rétro immersive.",
-      image: "assets/QIX.png",
+      image: `${ASSET_BASE}QIX.png`,
       technologies: ["Python", "Pygame"],
       github: "https://github.com/KhephrenDjelidi",
       team: "Binôme",
@@ -161,7 +163,7 @@ const portfolioData = {
       subtitle: "Jeu de société numérique",
       description:
         "Le but était de réaliser Codex Naturalis, un jeu de société qui plonge les joueurs dans le rôle de scientifiques explorant et découvrant la biodiversité de différentes régions du monde. En utilisant des cartes illustrées, les joueurs doivent collecter des échantillons de plantes et d'animaux pour remplir leur codex.",
-      image: "assets/Codex_Naturalis.png",
+      image: `${ASSET_BASE}CODEX_naturalis.png`,
       technologies: ["Java", "Gestion de projet", "Communication"],
       github: "https://github.com/KhephrenDjelidi",
       team: "Binôme",
@@ -173,7 +175,7 @@ const portfolioData = {
       subtitle: "Patrimoine culturel",
       description:
         "Application web développée en partenariat avec l'UNESCO pour valoriser et documenter le patrimoine culturel d'Alger. Base de données complète des sites historiques avec descriptions détaillées et galeries photographiques.",
-      image: "assets/UNESCO_Alger.png",
+      image: `${ASSET_BASE}UNESCO_alger.png`,
       technologies: ["PHP", "MySQL", "HTML/CSS"],
       github: "https://github.com/KhephrenDjelidi",
       team: "Équipe de 6",
@@ -185,7 +187,7 @@ const portfolioData = {
       subtitle: "Compresseur d'images",
       description:
         "Développement d'un compresseur d'images performant en C. Maîtrise de la manipulation de fichiers binaires, implémentation d'algorithmes de compression optimisés et gestion efficace de la mémoire. Compression sans perte et réduction de taille significative.",
-      image: "assets/CoDec.png",
+      image: `${ASSET_BASE}CoDec.png`,
       technologies: ["C", "Binaire", "Algorithmes"],
       github: "https://github.com/KhephrenDjelidi",
       skills: ["C", "Binôme", "Binaire"],
@@ -197,7 +199,7 @@ const portfolioData = {
       subtitle: "Gestion des activités universitaires",
       description:
         "Plateforme web et mobile centralisée pour la gestion complète des activités universitaires. Fonctionnalités d'inscription, de suivi en temps réel, recherche avancée et messagerie interne. Expérience utilisateur optimisée pour étudiants et organisateurs d'événements.",
-      image: "assets/U-Activity.png",
+      image: `${ASSET_BASE}U-activity.png`,
       technologies: ["React", "Node.js", "Android Studio", "Tailwind CSS"],
       github: "https://github.com/KhephrenDjelidi",
       skills: [
@@ -216,7 +218,7 @@ const portfolioData = {
       subtitle: "Pipeline CI/CD",
       description:
         "Mise en place complète d'une pipeline CI/CD avec Jenkins. Configuration avancée pour automatiser les tests, la compilation et le déploiement d'applications web. Intégration avec Docker pour la containerisation et orchestration des environnements.",
-      image: "assets/Jenkins_Project.png",
+      image: `${ASSET_BASE}Jenkins_Project.png`,
       technologies: ["Jenkins", "Docker", "CI/CD"],
       github: "https://github.com/KhephrenDjelidi",
       team: "Équipe de 5",

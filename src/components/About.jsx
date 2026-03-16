@@ -4,6 +4,8 @@ import { FaFileDownload } from "react-icons/fa";
 import "./About.css";
 
 const About = ({ profile }) => {
+  const assetBase = `${import.meta.env.BASE_URL}assets/`;
+
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -31,7 +33,7 @@ const About = ({ profile }) => {
           >
             <div className="about-image-wrapper">
               <img
-                src="assets/profil.jpg"
+                src={`${assetBase}profil.jpg`}
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 alt="Khephren Djelidi"
                 className="about-image-placeholder"
@@ -61,7 +63,7 @@ const About = ({ profile }) => {
             </p>
 
             <a
-              href="assets/cv.pdf"
+              href={`${assetBase}cv.pdf`}
               target="_blank"
               download="CV_Khephren_Djelidi.pdf"
               className="btn btn-primary"

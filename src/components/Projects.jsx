@@ -13,6 +13,8 @@ import BUTSelector from "./BUTSelector";
 import "./Projects.css";
 
 const Projects = ({ projects }) => {
+  const assetBase = `${import.meta.env.BASE_URL}assets/`;
+
   const [selectedProject, setSelectedProject] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeBUT, setActiveBUT] = useState(3);
@@ -48,7 +50,7 @@ const Projects = ({ projects }) => {
       subtitle: "Across the Galaxy",
       description:
         "Application de recherche d'itinéraires spatiaux inspirée de Star Wars. Utilisation de l'algorithme A* pour optimiser les trajets entre planètes.",
-      image: "assets/projet1.jpeg",
+      image: `${assetBase}travia.png`,
       technologies: ["Java", "C", "PHP", "MySQL"],
       github: "https://github.com/KhephrenDjelidi",
       team: "Équipe de 3 - SAE BUT2",
@@ -60,7 +62,7 @@ const Projects = ({ projects }) => {
       subtitle: "Course contre la montre",
       description:
         "Jeu multijoueur où les joueurs doivent naviguer le plus rapidement possible entre des articles Wikipedia.",
-      image: "assets/projet2.png",
+      image: `${assetBase}wikispeed.png`,
       technologies: ["React", "Node.js", "MongoDB"],
       github: "https://github.com/KhephrenDjelidi",
       team: "Équipe de 4 - SAE BUT2",
@@ -72,7 +74,7 @@ const Projects = ({ projects }) => {
       subtitle: "Gestion bancaire",
       description:
         "Application de gestion de trésorerie pour entreprises avec génération de graphiques et export PDF.",
-      image: "assets/projet3.png",
+      image: `${assetBase}bankai.png`,
       technologies: ["PHP", "MySQL", "Scrum"],
       github: "https://github.com/KhephrenDjelidi",
       team: "Équipe de 5 - Méthode Agile",
@@ -84,7 +86,7 @@ const Projects = ({ projects }) => {
       subtitle: "Réservation de billets",
       description:
         "Système de réservation de billets de train avec recherche et gestion des voyages.",
-      image: "assets/projet4.png",
+      image: `${assetBase}hessncf.png`,
       technologies: ["Node.js", "MongoDB", "HTML/CSS"],
       github: "https://github.com/KhephrenDjelidi",
       team: "Équipe de 5",
@@ -96,7 +98,7 @@ const Projects = ({ projects }) => {
       subtitle: "Jeu rétro revisité",
       description:
         "Recréation du célèbre jeu arcade QIX des années 80 en Python avec interface graphique.",
-      image: "assets/projet5.png",
+      image: `${assetBase}QIX.png`,
       technologies: ["Python", "Pygame"],
       github: "https://github.com/KhephrenDjelidi",
       team: "Binôme",
@@ -108,7 +110,7 @@ const Projects = ({ projects }) => {
       subtitle: "Patrimoine culturel",
       description:
         "Application web en partenariat avec l'UNESCO pour mettre en valeur le patrimoine culturel d'Alger.",
-      image: "assets/projet6.png",
+      image: `${assetBase}UNESCO_alger.png`,
       technologies: ["PHP", "MySQL", "HTML/CSS"],
       github: "https://github.com/KhephrenDjelidi",
       team: "Équipe de 6",
@@ -120,7 +122,7 @@ const Projects = ({ projects }) => {
       subtitle: "Compresseur d'images",
       description:
         "Développement d'un compresseur d'images en C. Familiarisation avec la manipulation de fichiers binaires, les algorithmes de compression et la gestion de la mémoire en C.",
-      image: "assets/projet7.png",
+      image: `${assetBase}travia1.png`,
       technologies: ["C", "Binaire", "Algorithmes"],
       github: "https://github.com/KhephrenDjelidi",
       skills: ["C", "Binôme", "Binaire"],
@@ -132,7 +134,7 @@ const Projects = ({ projects }) => {
       subtitle: "Pipeline CI/CD",
       description:
         "Mise en place d'une pipeline CI/CD avec Jenkins. Configuration de Jenkins pour automatiser les tests, la construction et le déploiement d'une application web, permettant de comprendre l'intégration continue et le déploiement continu.",
-      image: "assets/projet8.png",
+      image: `${assetBase}Jenkins_Project.png`,
       technologies: ["Jenkins", "Docker", "CI/CD"],
       github: "https://github.com/KhephrenDjelidi",
       skills: ["Jenkins", "Docker", "CI/CD"],
@@ -144,7 +146,7 @@ const Projects = ({ projects }) => {
       subtitle: "Gestion des activités universitaires",
       description:
         "Application web et mobile centralisée pour la gestion des activités universitaires. Intègre inscription, suivi, recherche avancée, messagerie interne et offre une expérience utilisateur optimisée pour étudiants et organisateurs.",
-      image: "assets/projet9.png",
+      image: `${assetBase}U-activity.png`,
       technologies: ["React", "Node.js", "Android Studio", "Tailwind CSS"],
       github: "https://github.com/KhephrenDjelidi",
       skills: [
